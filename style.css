@@ -1,6 +1,9 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
+    font-family: 'Pacifico', cursive;
+    background-color: #FFAFAF; /* Light Red Background */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8,32 +11,49 @@ body {
     margin: 0;
 }
 
-.container {
-    text-align: center;
-    background-color: #fff;
-    padding: 2em;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+/* Red envelope container */
+.envelope-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
 }
 
-button {
-    background-color: #007BFF;
+/* Envelope styling */
+.red-envelope {
+    background: #D32F2F; /* Darker Red for Envelope */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
     color: white;
-    padding: 10px 20px;
+    border: 5px solid gold;
+}
+
+/* Button styling */
+button {
+    background-color: #FFD700; /* Gold color */
+    color: red;
+    padding: 12px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     font-size: 1.2em;
     cursor: pointer;
-    transition: background-color 0.3s;
+    font-weight: bold;
+    transition: all 0.3s;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: white;
+    color: red;
 }
 
 #result {
-    font-size: 1.5em;
+    font-size: 1.8em;
     font-weight: bold;
-    color: #333;
+    color: yellow;
     margin-top: 20px;
 }
